@@ -29,7 +29,7 @@ Welcome to the **MERN Stack** repository! This project is built using the MERN (
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/amnakhalid625/Mern-Projects.git
-cd mern-stack-project
+cd Mern-Projects
 ```
 ### 2. Install dependencies
 #### Backend
