@@ -28,7 +28,7 @@ Welcome to the **MERN Stack** repository! This project is built using the MERN (
 ## 🛠️ Installation
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/mern-stack-project.git
+git clone https://github.com/amnakhalid625/Mern-Projects.git
 cd mern-stack-project
 ```
 ### 2. Install dependencies
@@ -45,7 +45,7 @@ npm install
 ### 3. Setup environment variables
 Create a `.env` file in the backend folder and add:
 ```
-PORT=5000
+PORT=4000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
@@ -61,13 +61,6 @@ npm start
 cd frontend
 npm start
 ```
-
-## 📄 License
-This project is open-source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-Contributions are welcome! Feel free to fork this repository and submit a pull request.
-
 ## 💡 Connect with Me
 - LinkedIn: [Amna Khalid](https://www.linkedin.com/in/amna-khalid-612001273/)
 - GitHub: [Your GitHub Profile](https://github.com/your-username/)
