@@ -63,4 +63,4 @@ npm start
 ```
 ## 💡 Connect with Me
 - LinkedIn: [Amna Khalid](https://www.linkedin.com/in/amna-khalid-612001273/)
-- GitHub: [Your GitHub Profile](https://github.com/your-username/)
+- GitHub: [GitHub Profile](https://github.com/amnakhalid625)
