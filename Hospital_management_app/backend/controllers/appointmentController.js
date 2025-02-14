@@ -13,7 +13,7 @@ export const postAppointment = catchAsyncError(async(req, res, next) => {
         dob,
         gender,
         appointment_date,
-        deparatment,
+        department,
         doctor_firstName,
         doctor_lastName,
         hasVisited,
@@ -28,7 +28,7 @@ export const postAppointment = catchAsyncError(async(req, res, next) => {
         !dob ||
         !gender ||
         !appointment_date ||
-        !deparatment ||
+        !department ||
         !doctor_firstName ||
         !doctor_lastName ||
         !hasVisited ||
@@ -41,7 +41,7 @@ export const postAppointment = catchAsyncError(async(req, res, next) => {
         firstName:doctor_firstName,
         lastName:doctor_lastName,
         role:"Doctor",
-        doctorDepartment:deparatment
+        doctorDepartment:department
 
     })
     if(isConflict.length ===0){
@@ -54,7 +54,7 @@ export const postAppointment = catchAsyncError(async(req, res, next) => {
     const doctorId=isConflict[0]._id
     const patientId=req.user._id
 
-    const appoinment=await Appiontment.create({
+    const appointment=await Appointment.create({
         
         firstName,
         lastName,
@@ -64,7 +64,7 @@ export const postAppointment = catchAsyncError(async(req, res, next) => {
         dob,
         gender,
         appointment_date,
-        deparatment,
+        department,
         doctor:{
          firstName:doctor_firstName,
             lastName:doctor_lastName,
