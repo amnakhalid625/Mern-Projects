@@ -39,7 +39,7 @@ npm install
 ```
 #### Frontend
 ```bash
-cd ../frontend
+cd ./frontend
 npm install
 ```
 ### 3. Setup environment variables
