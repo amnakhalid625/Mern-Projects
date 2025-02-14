@@ -7,6 +7,8 @@ import dbConnection from './database/dbConnection.js';
 import messageRouter from './routes/messageRouter.js';
 import { errorMiddleware } from './middlewares/errorMiddleware.js';
 import userRouter from './routes/userRouter.js'
+import appoinmentRouter from './routes/appointmentRouter.js'
+
 
 const app=express()
 config({ path: './config/.env' });
@@ -28,6 +30,8 @@ app.use(fileUpload({
 
 app.use('/api/v1/message',messageRouter)
 app.use('/api/v1/user',userRouter)
+app.use('/api/v1/appointment',appoinmentRouter)
+
 
 
 // database connection
