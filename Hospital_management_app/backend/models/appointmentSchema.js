@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 import validator from 'validator'
-import bcryptjs from 'bcryptjs'
-import jwt from 'jsonwebtoken'
+
 
 const appointmentSchema=new mongoose.Schema({
 firstName:{

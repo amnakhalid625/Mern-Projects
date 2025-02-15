@@ -56,7 +56,7 @@ export const patientLogin = catchAsyncError(async(req, res, next) => {
 
 
 export const addNewAdmin=catchAsyncError(async(req,res,next)=>{
-    const { firstName, lastName, email, phone, NIC, dob, gender, password, role } = req.body;
+    const { firstName, lastName, email, phone, NIC, dob, gender, password } = req.body;
 
     if(!firstName || !lastName || !email || !phone || !NIC || !dob || !gender || !password ){
         return next(new ErrorHandler("all fields must required!",400));
@@ -71,49 +71,11 @@ export const addNewAdmin=catchAsyncError(async(req,res,next)=>{
 
     res.status(201).json({
         success: true,
-        message: "New admin registered successfully"
+        message: "New admin registered successfully",
+        admin
     });
 })
 
-
-export const getAllDoctors=catchAsyncError(async(req,res,next)=>{
-    const doctors=await User.find({role:"Doctor"});
-    res.status(200).json({
-        success:true,
-      doctors,
-    })
-})
-
-export const getUserDetails=catchAsyncError(async(req,res,next)=>{
-    const user=req.user;
-    res.status(200).json({success:true,user})
-
-})
-
-export const logoutAdmin = catchAsyncError(async(req, res, next) => {
-    res.status(200).cookie("adminToken", "", {
-        httpOnly: true,
-        expires: new Date(Date.now()),
-        sameSite: "strict",
-        secure: process.env.NODE_ENV === "production"
-    }).json({
-        success: true,
-        message: "Admin logged out successfully!"
-    })
-})
-
-
-export const logoutPateint = catchAsyncError(async(req, res, next) => {
-    res.status(200).cookie("patientToken", "", {
-        httpOnly: true,
-        expires: new Date(Date.now()),
-        sameSite: "strict",
-        secure: process.env.NODE_ENV === "production"
-    }).json({
-        success: true,
-        message: "patient logged out successfully!"
-    })
-})
 
 
 export const addNewDoctor = catchAsyncError(async(req, res, next) => {
@@ -156,3 +118,46 @@ export const addNewDoctor = catchAsyncError(async(req, res, next) => {
     })
 
 })
+
+
+
+export const getAllDoctors=catchAsyncError(async(req,res,next)=>{
+    const doctors=await User.find({role:"Doctor"});
+    res.status(200).json({
+        success:true,
+      doctors,
+    })
+})
+
+export const getUserDetails=catchAsyncError(async(req,res,next)=>{
+    const user=req.user;
+    res.status(200).json({success:true,user})
+
+})
+
+export const logoutAdmin = catchAsyncError(async(req, res, next) => {
+    res.status(200).cookie("adminToken", "", {
+        httpOnly: true,
+        expires: new Date(Date.now()),
+        sameSite: "strict",
+        secure: process.env.NODE_ENV === "production"
+    }).json({
+        success: true,
+        message: "Admin logged out successfully!"
+    })
+})
+
+
+export const logoutPateint = catchAsyncError(async(req, res, next) => {
+    res.status(200).cookie("patientToken", "", {
+        httpOnly: true,
+        expires: new Date(Date.now()),
+        sameSite: "strict",
+        secure: process.env.NODE_ENV === "production"
+    }).json({
+        success: true,
+        message: "patient logged out successfully!"
+    })
+})
+
+
