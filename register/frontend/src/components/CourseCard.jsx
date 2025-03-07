@@ -8,7 +8,6 @@ const CourseCard = () => {
       <Link to="#">
         <img src={cardImg} alt="Course Thumbnail" />
       </Link>
-
       <div className="card-content">
         <Link to="#">
           <h4>Web Development</h4>
@@ -22,5 +21,4 @@ const CourseCard = () => {
     </div>
   );
 };
-
 export default CourseCard;

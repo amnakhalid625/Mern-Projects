@@ -5,7 +5,6 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-/* styles.css */
 .page {
     background-image: url('../public/register_background.jpg');
     background-size: cover;
@@ -61,8 +60,6 @@ body{
     font-weight: bold;
     background: linear-gradient(to top, rgba(0, 48, 179, 0.7), rgba( 153, 202, 60, 0.7));
 }
-
-
 form  {
     display: flex;
     flex-direction: column;
@@ -76,8 +73,6 @@ form  {
     padding-bottom: 40px;
 
   }
-  
-
   form h1 {
     font-size: 25px;
     font-weight: bold;
@@ -116,7 +111,6 @@ form  {
   }
 
  
-/* CSS */
 .navbar-container{
   background-color: #88B133;
   display: flex;
@@ -370,7 +364,6 @@ background: linear-gradient(to right, rgb(153, 202, 60), rgb(0, 48, 188));
 }
 
 
-/* responsiveness */
 @media (max-width: 768px) {
 
 
@@ -637,7 +630,6 @@ background: linear-gradient(to right, rgb(153, 202, 60), rgb(0, 48, 188));
   font-weight: 400; 
 }
 
-/* Right image styling */
 .right-image img {
   width: 100%;
   max-width: 400px;
@@ -645,7 +637,6 @@ background: linear-gradient(to right, rgb(153, 202, 60), rgb(0, 48, 188));
   border-radius: 20px; 
 }
 
-/* all students */
 .all-student{
   background: linear-gradient(to top, rgba(235, 244, 216,0.9), rgba(142, 154, 177,0.9));
   width: 100%;
@@ -875,7 +866,6 @@ background: linear-gradient(to right, rgb(153, 202, 60), rgb(0, 48, 188));
   justify-content: center; 
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .course-content {
     flex-direction: column; 
@@ -884,7 +874,6 @@ background: linear-gradient(to right, rgb(153, 202, 60), rgb(0, 48, 188));
   .course-image img {
     max-width: 100%; 
   }
-
   .course-cards {
     flex-direction: column; 
     align-items: center;

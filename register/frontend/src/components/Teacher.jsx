@@ -7,8 +7,6 @@ const Teacher = () => {
     <div className='page'>
         <div className='page-content'>
             <img src={logo} alt="" />
-
-
             <form action="" className='form-content'>
                 <h1>Register Form</h1>
                 <input type="text" placeholder='Username' />

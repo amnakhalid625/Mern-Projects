@@ -1,7 +1,5 @@
 import React from 'react'
 import logo from '../assets/saylani_logo.png';
-
-
 const Login = () => {
   return (
     <div className='page'> 

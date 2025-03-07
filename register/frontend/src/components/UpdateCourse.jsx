@@ -18,5 +18,4 @@ const UpdateCourse = ({ onClose }) => {
     </div>
   );
 };
-
 export default UpdateCourse;

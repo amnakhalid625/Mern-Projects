@@ -31,9 +31,7 @@ const CreateCourse = () => {
   <div className="right-image">
     <img src={computer} alt="Computer" />
   </div>
-</div>
-    
-    
+</div>   
     </>
   )
 }

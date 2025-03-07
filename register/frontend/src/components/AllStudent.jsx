@@ -7,7 +7,6 @@ import UpdateCourse from './UpdateCourse'
 
 const AllStudent = () => {
     const [showModal,setShowModal] = useState(false)
-
   return (
  
   <div className='all-student'>
@@ -15,7 +14,6 @@ const AllStudent = () => {
   <img src={logoImg} alt="Logo" />
   <img src={profile} alt="Profile" className="profile-image" />
   <p>Fatima</p>
-
   <ul className="sidebar-links">
     <li><Link to="/course" className="sidebar-link">Courses</Link></li>
     <li><Link to="/students" className="sidebar-link">Students</Link></li>
@@ -33,10 +31,6 @@ const AllStudent = () => {
     <button>Delete</button>
 
 </div>
-
-
-
-
 </div>
   )
 }

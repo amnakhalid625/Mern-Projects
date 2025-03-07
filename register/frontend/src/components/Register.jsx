@@ -8,7 +8,6 @@ const Register = (props) => {
       <div className="page-content">
         <img src={logo} alt="logo_img" className="mb-4" />
 
-        {/* Buttons Container */}
         <div className="button-container">
           <Button text={props.studentText} />
           <Button text={props.teacherText} />
