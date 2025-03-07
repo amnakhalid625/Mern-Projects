@@ -7,6 +7,9 @@ import Login from './components/Login';
 import MainPage from './components/MainPage';
 import SettingPage from './components/SettingPage';
 import CreateCourse from './components/CreateCourse';
+import AllStudent from './components/AllStudent';
+import UpdateCourse from './components/UpdateCourse';
+import CourseDetail from './components/CourseDetail';
 
 const App = () => {
   return (
@@ -17,6 +20,12 @@ const App = () => {
         <Route path="/main" element={<MainPage />} />
         <Route path="/setting" element={<SettingPage />} />
         <Route path="/create" element={<CreateCourse />} />
+        <Route path="/all" element={<AllStudent />} />
+        <Route path="/update" element={<UpdateCourse />} />
+        <Route path="/details" element={<CourseDetail />} />
+
+
+
 
 
 

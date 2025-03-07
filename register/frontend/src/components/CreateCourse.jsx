@@ -20,18 +20,17 @@ const CreateCourse = () => {
   </ul>
 </div>
 
-<div className="create-couse">
-    <div className="left-form">
-        <h1>Create Course</h1>
-        
-            <input type="text" id="course-name" placeholder="Enter course name" />
-            <input type="text" id="course-code" placeholder="Enter course code" />
-            <textarea id="course-description" placeholder="Enter course description"></textarea>
-            <button type="submit">Create Course</button>
-    </div>
-    <div className="right-image">
-        <img src={computer} alt="" />
-    </div>
+<div className="create-course">
+  <div className="left-form">
+    <h1>Create Course</h1>
+    <input type="text" id="course-name" placeholder="Enter course name" />
+    <input type="text" id="course-code" placeholder="Enter course code" />
+    <textarea id="course-description" placeholder="Description"></textarea>
+    <button type="submit">Create Course</button>
+  </div>
+  <div className="right-image">
+    <img src={computer} alt="Computer" />
+  </div>
 </div>
     
     
