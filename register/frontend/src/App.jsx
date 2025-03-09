@@ -10,6 +10,8 @@ import AllStudent from './components/AllStudent';
 import UpdateCourse from './components/UpdateCourse';
 import CourseDetail from './components/CourseDetail';
 import './index.css';
+import SecondCard from './components/SecondCard';
+import TeacherDashboard from './components/TeacherDashboard';
 
 
 const App = () => {
@@ -25,6 +27,9 @@ const App = () => {
         <Route path="/all" element={<AllStudent />} />
         <Route path="/update" element={<UpdateCourse />} />
         <Route path="/details" element={<CourseDetail />} />
+        <Route path="/dashboard" element={<TeacherDashboard />} />
+
+
 
       </Routes>
     </Router>
