@@ -6,6 +6,7 @@ const Teacher = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    console.log('Form Data:', formData);
   }
 
   const [formData, setFormData] = useState({
@@ -13,6 +14,7 @@ const Teacher = () => {
     email: '',
     password: ''
   });
+
 
   const handleInput = () => {
     const { name, value } = e.target;
@@ -33,9 +35,9 @@ const Teacher = () => {
         <img src={logo} alt="" />
         <form action="" className='form-content' onSubmit={handleSubmit}>
           <h1>Register Form</h1>
-          <input type="text" placeholder='Username' value={formData.name} />
-          <input type="email" placeholder='Email' value={formData.email} />
-          <input type="password" placeholder='Password' value={formData.password} />
+          <input type="text" placeholder='Username' value={formData.name} onChange={handleInput} />
+          <input type="email" placeholder='Email' value={formData.email} onChange={handleInput} />
+          <input type="password" placeholder='Password' value={formData.password} onChange={handleInput} />
           <button className='submit-button' type='submit'>Submit</button>
         </form>
       </div>
